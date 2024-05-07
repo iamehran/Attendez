@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Righteous', sans-serif;
+}
+
+
+.modalStyle .ant-modal-content {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Righteous", "sans-serif";
+  aspect-ratio: 1/1;
+  height: 70vh;
+  width: 50vw;
+}
+
+.modalStyle .ant-modal-content button {
+  border: 1px solid blue;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    scale: 5%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 0;
+    scale: 20%;
+  }
+  24% {
+    opacity: 1;
+    transform: rotate(360deg);
+    scale: 100%;
+  }
+  48% {
+    opacity: 1;
+    transform: rotate(360deg);
+    scale: 100%;
+    transform: translateX(-40%);
+  }
+  78% {
+    opacity: 1;
+    transform: rotate(360deg);
+    scale: 100%;
+    transform: translateX(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+    scale: 100%;
+    transform: translateX(0%);
+  }
+}
+.animateOnStart {
+  animation: spin 10s linear;
+}
+.blob {
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  animation: morph 3.5s linear infinite;
+  border: 1px solid white;
+}
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+  33% {
+    border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 0.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__content {
+    animation-play-state: paused !important;
+  }
+}
+
+.marq-animation .marquee__content {
+  animation: scroll 20s linear infinite;
+}
+
+.flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+.flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  /* min-height: 475px; */
+  -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
+}
+
+.blurBg {
+  background: radial-gradient(#22c55e 0%, transparent 70%);
+}
+
+    .content-div:hover .fd-cl { 
+ opacity: 0.25;
+ background: black;
+    }
+    .content-div:hover .fd-sh{ 
+ opacity: 1;
+    }
