@@ -7,34 +7,16 @@ let reverse = false;
 
 export default function TeamSection() {
   const team = [
-    // {
-    //   name: "anushka singh",
-    //   avatar: "/images/team/anushka.png",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta rerum nam, quibusdam rem autem beatae laudantium tempore odio tenetur repellat perferendis? Dolore maxime beatae repellat praesentium soluta, omnis unde reiciendis, impedit blanditiis quos autem ullam ipsam! Vitae, assumenda ratione.",
-    //   designation: "president",
-    // },
-    // {
-    //   name: "chirag jain",
-    //   avatar: "/images/team/chirag.png",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta rerum nam, quibusdam rem autem beatae laudantium tempore odio tenetur repellat perferendis? Dolore maxime beatae repellat praesentium soluta, omnis unde reiciendis, impedit blanditiis quos autem ullam ipsam! Vitae, assumenda ratione.",
-    //   designation: "chairperson",
-    // },
-    // {
-    //   name: "karan chugh",
-    //   avatar: "/images/team/karan.png",
-    //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta rerum nam, quibusdam rem autem beatae laudantium tempore odio tenetur repellat perferendis? Dolore maxime beatae repellat praesentium soluta, omnis unde reiciendis, impedit blanditiis quos autem ullam ipsam! Vitae, assumenda ratione.",
-    //   designation: "technical head",
-    // },
     {
-      name: "kaushik sharma",
-      avatar: "/images/team/kaushik.png",
+      name: "Mehran Firdous",
+      avatar: "/images/team/Astronaut.gif",
       about:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta rerum nam, quibusdam rem autem beatae laudantium tempore odio tenetur repellat perferendis? Dolore maxime beatae repellat praesentium soluta, omnis unde reiciendis, impedit blanditiis quos autem ullam ipsam! Vitae, assumenda ratione.",
       designation: "technical coordinator",
     },
     {
-      name: "kaushik sharma",
-      avatar: "/images/team/kaushik.png",
+      name: "Gintas Singh Sidhu",
+      avatar: "/images/team/Astronaut.gif",
       about:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta rerum nam, quibusdam rem autem beatae laudantium tempore odio tenetur repellat perferendis? Dolore maxime beatae repellat praesentium soluta, omnis unde reiciendis, impedit blanditiis quos autem ullam ipsam! Vitae, assumenda ratione.",
       designation: "technical coordinator",
